@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profil Chika Aurelia Azka</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+
+    background:linear-gradient(
+        135deg,
+        #fff5f8,
+        #ffd6e7,
+        #ffe4ef,
+        #ffc7dd
+    );
+
+    background-size:400% 400%;
+    animation:bg 12s ease infinite;
+}
+
+@keyframes bg{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+/* LOVE BESAR */
+
+.heart-card{
+    position:relative;
+    width:350px;
+    height:320px;
+
+    background:linear-gradient(
+        135deg,
+        rgba(255,255,255,.8),
+        rgba(255,214,231,.8)
+    );
+
+    transform:rotate(-45deg);
+
+    border-radius:30px;
+
+    box-shadow:
+    0 10px 30px rgba(255,105,180,.25),
+    0 0 50px rgba(255,182,193,.3);
+
+    backdrop-filter:blur(10px);
+}
+
+.heart-card::before,
+.heart-card::after{
+    content:'';
+    position:absolute;
+
+    width:350px;
+    height:320px;
+
+    background:linear-gradient(
+        135deg,
+        rgba(255,255,255,.8),
+        rgba(255,214,231,.8)
+    );
+
+    border-radius:50%;
+}
+
+.heart-card::before{
+    top:-170px;
+    left:0;
+}
+
+.heart-card::after{
+    left:170px;
+    top:0;
+}
+
+/* ISI CARD */
+
+.content{
+    position:absolute;
+    width:100%;
+    height:100%;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    transform:rotate(45deg);
+
+    z-index:10;
+}
+
+/* FOTO LOVE */
+
+.photo-heart{
+    width:130px;
+    height:130px;
+
+    position:relative;
+
+    transform:rotate(-45deg);
+    margin-bottom:20px;
+}
+
+.photo-heart::before,
+.photo-heart::after{
+    content:'';
+    position:absolute;
+    width:130px;
+    height:130px;
+    background:white;
+    border-radius:50%;
+}
+
+.photo-heart::before{
+    top:-65px;
+    left:0;
+}
+
+.photo-heart::after{
+    left:65px;
+    top:0;
+}
+
+.photo-heart img{
+    width:130px;
+    height:130px;
+    object-fit:cover;
+
+    position:absolute;
+
+    clip-path:path(
+    "M64 117 C20 80 0 55 0 30 C0 10 15 0 32 0 C48 0 60 10 64 20 C68 10 80 0 96 0 C113 0 128 10 128 30 C128 55 108 80 64 117 Z");
+
+    transform:rotate(45deg);
+    z-index:3;
+
+    border-radius:20px;
+}
+
+/* NAMA */
+
+h2{
+    color:#ff5da2;
+    font-size:22px;
+    margin-top:10px;
+}
+
+/* INFO */
+
+.info{
+    text-align:center;
+    color:#555;
+    font-size:14px;
+    line-height:1.8;
+    margin-top:10px;
+}
+
+.info b{
+    color:#ff5da2;
+}
+
+/* QUOTE */
+
+.quote{
+    margin-top:10px;
+    font-size:12px;
+    color:#ff77b7;
+    font-style:italic;
+    text-align:center;
+    width:220px;
+}
+
+/* LOVE MELAYANG */
+
+.hearts{
+    position:absolute;
+    width:100%;
+    height:100%;
+}
+
+.hearts span{
+    position:absolute;
+    font-size:22px;
+    animation:float 10s linear infinite;
+}
+
+.hearts span:nth-child(1){
+    left:10%;
+}
+
+.hearts span:nth-child(2){
+    left:30%;
+    animation-delay:2s;
+}
+
+.hearts span:nth-child(3){
+    left:60%;
+    animation-delay:4s;
+}
+
+.hearts span:nth-child(4){
+    left:85%;
+    animation-delay:6s;
+}
+
+@keyframes float{
+    from{
+        transform:translateY(100vh);
+        opacity:0;
+    }
+
+    to{
+        transform:translateY(-100px);
+        opacity:1;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="hearts">
+    <span>💖</span>
+    <span>💕</span>
+    <span>🌸</span>
+    <span>💗</span>
+</div>
+
+<div class="heart-card">
+
+<div class="content">
+
+<div class="photo-heart">
+<img src="chikacantik.jpeg" alt="Foto Profil">
+</div>
+
+<h2>CHIKA AURELIA AZKA</h2>
+
+<div class="info">
+    <p><b>Kelas :</b> XA FARMASI</p>
+    <p><b>Sekolah :</b> SMKS Kesehatan Yannas Husada Bangkalan</p>
+    <p><b>Hobi :</b> Membaca Buku 📚</p>
+</div>
+
+<div class="quote">
+💗 Belajar dengan hati, tumbuh dengan mimpi,
+dan bersinar dengan prestasi. 💗
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
